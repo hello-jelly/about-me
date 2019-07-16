@@ -3,47 +3,50 @@
 
 // Reference needed DOM elements
 const quizButton = document.getElementById('quiz-button');
-const result = document.getElementById('quiz-result');
+//const result = document.getElementById('quiz-result');
 
 // Initialization (setup, state variables)
+//result.textContent = response;
 
 // Event Handlers
 quizButton.onclick = function() {
   alert('Were you paying attention?');
-  const firstName = prompt('What\'s your first name?');
-  name = name + firstName;
-  
-  const lastName = prompt('What\'s your last name?');
-  name = name + ' ' + lastName;
-  alert('Hello ')
-    
-  const isExoticShorthair = prompt('Is Bisbee an Exotic Shorthair (Y/N)?');
-  const correctisExoticShorthair = true;
-  if(isYes(isExoticShorthair) === correctisExoticShorthair) {
-    correctAnswers += 1;
+  const confirmed = confirm('Are you sure about that?');
+  if(confirmed === false) {
+    return;
   }
-
-  const lovesTinyBoxes = prompt('Does Bisbee love tiny boxes (Y/N)?');
-  const correctlovesTinyBoxes = true;
-  if(isYes(lovesTinyBoxes) === correctlovesTinyBoxes) {
-    correctAnswers += 1;
-  }
-
-  const hatesJerome = prompt('Does Bisbee hate Jerome (Y/N)?');
-  const correctHatesJerome = true;
-  if(isYes(hatesJerome) === correctHatesJerome) {
-    correctAnswers += 1;
-  }
-    
-  let correctAnswers = 0;
-  let response = 'Your name is ' + name;
-  if(correctAnswers >= 2) {
-    response += '\, the Biz is pleased';
+  let nameResponse = '';
+  const firstLastName = prompt('What\'s your first and last name?');
+  if(firstLastName === null || firstLastName === '') {
+    return;
   } else {
-    response += '\, the Biz is insulted';
+    nameResponse = 'Hello ' + firstLastName + '! Let\'s get to it!';
+    alert(nameResponse);
   }
+};
+
+  // const isExoticShorthair = prompt('Is Bisbee an Exotic Shorthair (Y/N)?');
+  // if(isYes(isExoticShorthair) === correctAnswers) {
+  //   correctAnswers += 1;
+  // }
+  
+
+//   const lovesTinyBoxes = prompt('Does Bisbee love tiny boxes (Y/N)?');
+//   const correctlovesTinyBoxes = true;
+//   if(isYes(lovesTinyBoxes) === correctlovesTinyBoxes) {
+//     correctAnswers += 1;
+//   }
+
+//   const hatesJerome = prompt('Does Bisbee hate Jerome (Y/N)?');
+//   const correctHatesJerome = true;
+//   if(isYes(hatesJerome) === correctHatesJerome) {
+//     correctAnswers += 1;
+//   }
     
-  result.textContent = response;
-}
-
-
+//   let correctAnswers = 0;
+//   if(correctAnswers >= 2) {
+//     response = 'You scored' + XX + ', the Biz is insulted';
+//   } else {
+//     response += 'You scored' + XX + ', the Biz is insulted';
+//   }  
+// };
