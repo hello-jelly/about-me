@@ -1,0 +1,62 @@
+html {
+    background-image: url('../assets/background.jpg');
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+main {
+    margin: 5rem;
+}
+
+header {
+    margin: 3rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Pacifico";
+    font-size: 6rem;
+    color: maroon;
+}
+
+h4 {
+    font-family: "Pacifico";
+    color: brown;
+    font-size: 2rem;
+}
+
+button {
+    height: 100px;
+    width: 400px;
+    margin: 20px;
+    background-color: rgb(146, 233, 204);
+    border-color: rgb(146, 233, 204);
+    font-size: 1.75rem;
+    border-radius: 30px;
+}
+
+.profile {
+    float: left;
+    margin: 10px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.bonus-pic {
+    float: right;
+    width: 650px;
+}
+
+.border {
+    border-color: white;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: white;
+    height: 325px;
+    text-align: center;
+    padding: 10px;
+}
+
+.finish {
+    font-size: 2rem; 
+}
