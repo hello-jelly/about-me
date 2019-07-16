@@ -1,0 +1,38 @@
+html {
+    background-image: url('../assets/background.jpg');
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+main {
+    margin: 5rem;
+}
+
+header {
+    margin: 3rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Pacifico";
+    font-size: 5rem;
+    color: maroon;
+}
+
+h4 {
+    font-family: "Pacifico";
+    color: brown;
+    font-size: 2rem;
+}
+
+button {
+    
+}
+
+.profile {
+    float: left;
+    margin: 10px;
+    height: 300px;
+    border-radius: 50%;
+    border: 25px, solid, brown;
+}
