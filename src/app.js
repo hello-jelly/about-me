@@ -1,12 +1,11 @@
 /* eslint-disable no-console */
-//import isYes from './is-yes.js';
+import isYes from './is-yes.js';
 
 // Reference needed DOM elements
 const quizButton = document.getElementById('quiz-button');
-//const result = document.getElementById('quiz-result');
+const result = document.getElementById('quiz-result');
 
 // Initialization (setup, state variables)
-//result.textContent = response;
 
 // Event Handlers
 quizButton.onclick = function() {
@@ -23,30 +22,35 @@ quizButton.onclick = function() {
     nameResponse = 'Hello ' + firstLastName + '! Let\'s get to it!';
     alert(nameResponse);
   }
-};
-
-  // const isExoticShorthair = prompt('Is Bisbee an Exotic Shorthair (Y/N)?');
-  // if(isYes(isExoticShorthair) === correctAnswers) {
-  //   correctAnswers += 1;
-  // }
   
+  let correctAnswers = 0;
+  const exoticResult = true;
+  const isExoticShorthair = prompt('Is Bisbee an Exotic Shorthair (Y/N)?');
+  if(isYes(isExoticShorthair) === exoticResult) {
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
 
-//   const lovesTinyBoxes = prompt('Does Bisbee love tiny boxes (Y/N)?');
-//   const correctlovesTinyBoxes = true;
-//   if(isYes(lovesTinyBoxes) === correctlovesTinyBoxes) {
-//     correctAnswers += 1;
-//   }
+  const tinyResult = true;
+  const isTinyResult = prompt('Does Bisbee love tiny boxes (Y/N)?');
+  if(isYes(isTinyResult) === tinyResult) {
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
 
-//   const hatesJerome = prompt('Does Bisbee hate Jerome (Y/N)?');
-//   const correctHatesJerome = true;
-//   if(isYes(hatesJerome) === correctHatesJerome) {
-//     correctAnswers += 1;
-//   }
-    
-//   let correctAnswers = 0;
-//   if(correctAnswers >= 2) {
-//     response = 'You scored' + XX + ', the Biz is insulted';
-//   } else {
-//     response += 'You scored' + XX + ', the Biz is insulted';
-//   }  
-// };
+  const hatesResult = false;
+  const isHatesResult = prompt('Does Bisbee love Jerome (Y/N)?');
+  if(isYes(isHatesResult) === hatesResult) {
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
+  
+  alert('Are you ready for your score?');
+  let response = 'You scored ';
+  if(correctAnswers === 3) {
+    response += correctAnswers + '/3, the Biz is pleased!';
+  } else {
+    response += correctAnswers + '/3, the Biz is insulted!';
+  }  
+  result.textContent = response;
+};

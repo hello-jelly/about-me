@@ -56,3 +56,7 @@ button {
     text-align: center;
     padding: 10px;
 }
+
+.finish {
+    font-size: 2rem; 
+}

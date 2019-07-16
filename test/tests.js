@@ -1,12 +1,14 @@
 const test = QUnit.test;
+import isYes from './is-yes.js';
 
-test('time to test a function', function(assert) {
     //Arrange
     // Set up your parameters and expectations
 
     //Act 
     // Call the function you're testing and set the result to a const
 
-    //Assert
-    assert.equal(true, false);
-});
+const helloJelly = true;
+const isHelloJelly = 'Is my Github name Hello Jelly?';
+if(isYes(isHelloJelly) === helloJelly) {
+  console.log('You were right');
+}
