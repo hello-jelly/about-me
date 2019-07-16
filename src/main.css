@@ -40,12 +40,17 @@ button {
     margin: 10px;
     height: 300px;
     border-radius: 50%;
-    border: 25px, solid, brown;
+}
+
+.bonus-pic {
+    float: right;
+    width: 650px;
 }
 
 .border {
-    border-style: solid;
     border-color: white;
+    border-radius: 30px;
+    border-style: solid;
     background-color: white;
     height: 325px;
     text-align: center;
