@@ -46,12 +46,12 @@ test('nana is yes', function(assert) {
 // test('apple is no', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-  const text = 'apple';
-  const expected = false;
+  // const text = 'apple';
+  // const expected = false;
 
     //Act 
     // Call the function you're testing and set the result to a const
-  const result = isYes(text);
+  // const result = isYes(text);
 
     //Assert
 //   assert.equal(result, expected);
