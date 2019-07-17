@@ -1,4 +1,6 @@
-// import numbers from './is-correct';
+// import numbers from './number-guess';
+
+// What do I need to get from DOM?
 
 const guessButton = document.getElementById('button');
 const result = document.getElementById('result');
@@ -6,6 +8,11 @@ const numberInput = document.getElementById('number-input');
 const grandPrize = document.getElementById('hi-five'); 
 const gameLost = document.getElementById('you-lose');
 let numberGuess = 4;
+let randomNm = setRandom(20);
+
+fuction setRandomInt(max) {
+  return Math.floor(Math.random() * (max -1)) +1;
+}
 
 guessButton.addEventListener('click', function(event) { 
   event.preventDefault();
@@ -14,7 +21,6 @@ guessButton.addEventListener('click', function(event) {
   
   if(guessNumber < 3) {
     result.textContent = 'Oops, that\'s too low, guess again';
-
   }
   
   if(guessNumber > 3) {
@@ -29,5 +35,5 @@ guessButton.addEventListener('click', function(event) {
   if(numberGuess === 0) {
     result.textContent = '';
     gameLost.classList.remove('hidden');
-  }
+    }
 });
