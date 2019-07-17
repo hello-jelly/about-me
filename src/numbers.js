@@ -1,24 +1,34 @@
 // import numbers from './is-correct';
 
 const guessButton = document.getElementById('button');
-const result = document.getElementById('get-result');
-const numberInput = document.getElementById('number-input'); 
+const result = document.getElementById('result');
+const numberInput = document.getElementById('number-input');
+const grandPrize = document.getElementById('hi-five'); 
+const gameLost = document.getElementById('you-lose');
 
-// GamepadButton.addEventListener('click', function() {
-// }
-
-let guess = numberInput;
-guessButton.addEventListener('click', function() { 
+guessButton.addEventListener('click', function(event) { 
+  event.preventDefault();
     
-}
-    // if(numberInput <= 2) {
-    //     result = 'Oops, that\'s too low...'
-    // }
+  let guessNumber = parseInt(numberInput.value);
+  
+  if(guessNumber < 3) {
+    result.textContent = 'Oops, that\'s too low, guess again';
+  }
+  
+  if(guessNumber > 3) {
+    result.textContent = 'Yikes, that\'s too high, guess again';
+  }
 
-    // if(numberInput >= 4) {
-    //     result = 'Yikes, that\'s too high'
-    // }
+  if(guessNumber === 3) {
+    result.textContent = 'CONGRATULATIONS!';
+    grandPrize.classList.remove('hidden');
+  }
+})
 
-    // if(numberInput === 3) {
-    //     result = 
-    // }
+// After 4 attempts if player loses:
+  // if(numberGuess === 4) {
+  //   gameLost.classList.remove('hidden');
+  // }
+// test(, (assert) => {
+//   const result = makeVolume(volume);
+//   assert.equal(result, expected);

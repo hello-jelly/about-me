@@ -12,7 +12,7 @@
     <header>
             <nav>
                     <a href="./">Home</a>
-                    <a href="numbers.html">Guessing Game</a>
+                    <a href="numbers.html">Game</a>
             </nav>
         <h1><img class="logo" src="assets/logo.png" alt="game logo"></h1>
         <img class="art" src="assets/art.png" alt="question mark art">
@@ -34,10 +34,15 @@
         
         <section>
             <button id="button"><strong>SUBMIT GUESS</strong></button>
-            <p class="finish" id="guess-result"><span id="result"></span></p>
+            <p>
+                <span id="result"></span></p>
+            <div>
+                <img id="hi-five" class="hidden" src="assets/hi-five.jpg" alt="A High Five">
+                <img id="you-lose" class="hidden" src="assets/you-lose.jpg" alt="Sorry You Lose">
+            </div>
         </section>
     </main>
     <script type="module" src="src/numbers.js"></script>
-    <script src="../about-me/src/numbers.js"></script>
+    <script src="./src/numbers.js"></script>
 </body>
 </html>

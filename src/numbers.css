@@ -11,7 +11,7 @@ header {
 
 button {
     height: 100px;
-    width: 600px;
+    width: 500px;
     margin: 20px;
     background-color: rgb(240, 56, 202);
     border-color: rgb(240, 56, 202);
@@ -21,13 +21,30 @@ button {
 }
 
 input {
+    font-size: 2rem;
+    text-align: center;
     height: 100px;
-    width: 600px;
     margin: 20px;
+    width: 300px;
 }
 
 section {
     text-align: center;
+}
+
+#hi-five {
+    border-radius: 50%;
+    height: 600px;
+}
+
+#you-lose {
+    height: 600px;
+}
+
+#result {
+    font-size: 1.5rem;
+    font-style: oblique;
+    padding: 2rem;
 }
 
 .art {
@@ -38,4 +55,12 @@ section {
 .logo {
     float: center;
     width: 1600px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
 }
