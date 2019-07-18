@@ -14,6 +14,7 @@ test('banana is yes', function(assert) {
 
     //Assert
   assert.equal(result, expected);
+});
 
 test('BANANA is yes', function(assert) {
     //Arrange

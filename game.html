@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kai Bai Bo</title>
+  <link rel="stylesheet" href="src/game.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Josefin+Sans|Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <main>
+    <header>
+      <img id="logo" src="assets/game/game-logo.png">
+    </header>
+    
+    <section>
+      <p id="intro">
+        <strong>Kai Bai Bo</strong> is a variation of the westernized game "Rock Scissors Paper". <br>
+        Ka-wi <em>(가위)</em> is Scissors, <em>Ba-wi (바위)</em> is Rock, and Bo <em>(보)</em> is Cloth. <br>
+        The rules of the game are the same, and the result is final. <br>
+        It's undoubtedly the great equalizer in Korean society, a time-honored method of <br>
+        making any and all decisions, and the greatest tiebreaker known to man.
+      </p>
+    </section>
+    
+    <section id="setup">
+      <h1>Play Your Hand</h1>
+    </section>
+    
+    <section>
+      <label>
+        <input type="radio" name="hand" value="kai" checked>
+        <img class="radio-image" src="assets/game/player-scissor.png">
+      </label>
+
+      <label>
+        <input type="radio" name="hand" value="bai">
+        <img class="radio-image" src="assets/game/player-rock.png">
+      </label>
+      
+      <label>
+        <input type="radio" name="hand" value="bo">
+        <img class="radio-image" src="assets/game/player-paper.png">
+      </label>
+    </section>
+    
+    <br><br>
+    <button id="play-button">"KAI-BAI-BO!"</button>
+
+    <section id="hand-plays">
+      <img id="player-paper" class="invisible" src="assets/game/player-paper.jpg">
+      <img id="player-scissor" class="invisible" src="assets/game/player-scissor.jpg">
+      <img id="player-rock" class="invisible" src="assets/game/player-rock.jpg">
+      <img id="cpu-paper" class="invisible" src="assets/game/cpu-paper.jpg">
+      <img id="cpu-scissor" class="invisible" src="assets/game/cpu-scissor.jpg">
+      <img id="cpu-rock" class="invisible" src="assets/game/cpu-rock.jpg">
+    </section>
+
+    <p id="response"></p>
+
+    <p id="tally">
+      <label class="tally-spans">
+        <span>YOU = <span class="count" id="win-count">0</span></span>
+      </label>
+      
+      <label class="tally-spans">
+      <span>CPU = <span class="count" id="loss-count">0</span></span>
+      </label>
+    </p>
+  </main>
+  <script type="module" src="src/game.js"></script>
+</body>
+</html>

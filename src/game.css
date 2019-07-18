@@ -1,0 +1,89 @@
+html {
+  background-color: rgb(160 219 231);
+}
+
+main {
+  display: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+#logo {
+  width: 1400px;
+}
+
+#intro {
+  text-align: center;
+}
+
+#setup {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+input {
+  display: none;
+}
+
+input:checked + img {
+  box-shadow: 5px 5px 8px black;
+  transition: box-shadow .3s ease-out;  
+}
+
+label {
+  cursor: pointer;
+}
+
+img.radio-image {
+  border: 3px solid transparent;  
+  width: 400px;
+}
+
+#play-button {
+  border-radius: 20px;
+  background-color: rgb(241 84 70);
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+  height: 100px;
+  letter-spacing: 2px;
+  width: 400px;
+}
+
+#hand-plays {
+  align-items: center;
+  display: flex;
+  height: 37rem;
+  justify-content: space-evenly;
+}
+
+#hand-plays img {
+  width: 55rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: visible;
+}
+
+#response {
+  font-family: 'Anton', sans-serif;
+  font-size: 7rem;
+  margin: 0;
+}
+
+.tally-spans {
+  padding: 1.25rem;
+}
+
+#tally {
+  font-size: 3rem;
+  padding: 4rem;
+}
