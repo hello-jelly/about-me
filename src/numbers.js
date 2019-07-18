@@ -5,30 +5,37 @@
 const guessButton = document.getElementById('button');
 const result = document.getElementById('result');
 const numberInput = document.getElementById('number-input');
-const grandPrize = document.getElementById('hi-five'); 
-const gameLost = document.getElementById('you-lose');
-let numberGuess = 4;
+const hiFive = document.getElementById('hi-five'); 
+const youLose = document.getElementById('you-lose');
+let numberOfGuesses = 4;
 
 guessButton.addEventListener('click', function(event) { 
   event.preventDefault();
-  numberGuess -= 1;
-  let guessNumber = parseInt(numberInput.value);
+  numberOfGuesses -= 1;
+  let userGuess = parseInt(numberInput.value);
   
-  if(guessNumber < 3) {
+  if(userGuess < 3) {
     result.textContent = 'Oops, that\'s too low, guess again';
   }
   
-  if(guessNumber > 3) {
+  if(userGuess > 3) {
     result.textContent = 'Yikes, that\'s too high, guess again';
   }
 
-  if(guessNumber === 3) {
+  if(userGuess === 3) {
     result.textContent = 'CONGRATULATIONS!';
-    grandPrize.classList.remove('hidden');
+    hiFive.classList.remove('hidden');
+    disableButton();
   }
 
-  if(numberGuess === 0) {
+  if(numberOfGuesses === 0) {
     result.textContent = '';
-    gameLost.classList.remove('hidden');
+    youLose.classList.remove('hidden');
+    disableButton();  
   }
 });
+
+function disableButton() {
+  guessButton.disabled = true;
+}
+
