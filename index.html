@@ -13,28 +13,31 @@
 </head>
 <body>
     <header>
-            <nav>
-                    <a href="./">Home</a>
-                    <a href="numbers.html">Game</a>
-            </nav>
+        <nav>
+            <a href="./">About Me</a>
+            <a href="numbers.html">Guess Game</a>
+            <a href="game.html">Kai-Bai-Bo!</a>
+        </nav>
         <h1>Meet Bisbee!</h1>
     </header>
     <main>
         <section class="border">
-            <img class="profile" src="assets/bisbee.jpg" alt="photo of Bisbee"> <br>
-            <h2>Hello Everyone...</h2>
-            <p>
-                I'm Bisbee, a 7 year old Exotic Shorthair cat. I was passed around 3 homes before <br>
-                getting rescued by my current owners in 2013. I live in SE Portland with my family <br>
-                of 9. My favorite people are my Mom and Dad, and I enjoy the birds as well: Ringo, <br>
-                Rosie and Siggy. I tolerate the dogs: Suede, Nimbus and Desmond, but I absolutely <br>
-                detest the newest member, Jerome...the <em>other cat</em>. My hobbies include napping on <br> 
-                the wine rack, sitting in the fireplace, peering at you from behind a wall, knocking all <br>
-                objects off all surfaces, and cramming myself into tiny boxes.
-            </p>
+            <div id="intro"></div>
+                <img class="profile" src="assets/bisbee.jpg" alt="photo of Bisbee"> <br>
+                <h2>Hello Everyone...</h2>
+                <p>
+                    I'm Bisbee, a 7 year old Exotic Shorthair cat. I was passed around 3 homes before <br>
+                    getting rescued by my current owners in 2013. I live in SE Portland with my family <br>
+                    of 9. My favorite people are my Mom and Dad, and I enjoy the birds as well: Ringo, <br>
+                    Rosie and Siggy. I tolerate the dogs: Suede, Nimbus and Desmond, but I absolutely <br>
+                    detest the newest member, Jerome...the <em>other cat</em>. My hobbies include napping on <br> 
+                    the wine rack, sitting in the fireplace, peering at you from behind a wall, knocking all <br>
+                    objects off all surfaces, and cramming myself into tiny boxes.
+                </p>
+            </div>
         </section>
         
-        <section>
+        <section id="lists">
             <img class="bonus-pic" src="assets/bisbee-box.png" alt="bisbee in a box">
             <h3>Bisbee loves, in order...</h3>
             <ol>
@@ -46,7 +49,7 @@
             </ol>
         </section>
         
-        <section>
+        <section id="lists">
             <h3>Bisbee hates...</h3>
             <ul>
                 <li>when Jerome chases her</li>
@@ -56,7 +59,7 @@
             </ul>
         </section>
         
-        <section>
+        <section id="lists">
             <h4>Now test your knowledge!</h4>
             <button id="quiz-button"><strong>POP QUIZ</strong></button>
             <p class="finish" id="quiz-result"><span id="response"></span></p>

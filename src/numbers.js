@@ -8,11 +8,6 @@ const numberInput = document.getElementById('number-input');
 const grandPrize = document.getElementById('hi-five'); 
 const gameLost = document.getElementById('you-lose');
 let numberGuess = 4;
-// let randomNm = setRandom(20);
-
-// fuction setRandomInt(max) {
-//   return Math.floor(Math.random() * (max -1)) +1;
-// }
 
 guessButton.addEventListener('click', function(event) { 
   event.preventDefault();
@@ -35,5 +30,5 @@ guessButton.addEventListener('click', function(event) {
   if(numberGuess === 0) {
     result.textContent = '';
     gameLost.classList.remove('hidden');
-    }
+  }
 });

@@ -5,3 +5,9 @@
 // 0 - the numbers are identical
 // -1 - the guessed number is too low
 // 1 - the guessed number is too high
+
+// let randomNumber = setRandom(20);
+
+// export fuction setRandom(max) {
+//   return Math.floor(Math.random(randomNumber) * (max -1)) +1;
+// }
