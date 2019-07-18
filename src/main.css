@@ -19,8 +19,8 @@ nav a {
 
 main {
     align-content: center;
-    margin: auto;
     font-size: 1.25rem;
+    margin: auto;
 }
 
 h1 {
@@ -29,15 +29,18 @@ h1 {
     color: maroon;
 }
 
+#intro {
+    margin: auto;
+}
+
 .border {
-    border-color: white;
+    border: 1px solid white;
     border-radius: 30px;
-    border-style: solid;
     background-color: white;
-    display: center;
     height: 410px;
-    max-width: 80%;
+    margin: auto;
     text-align: center;
+    width: 1500px;
 }
 
 .profile {
@@ -68,14 +71,14 @@ button {
     width: 400px;
 }
 
-#lists {
-    margin: 7rem;
+.lists {
     font-size: 1.5rem;
+    margin: auto;
+    width: 1500px;
 }
 
 .bonus-pic {
     float: right;
-    margin: 2rem;
     width: 1000px;
 }
 

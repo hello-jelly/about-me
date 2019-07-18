@@ -11,7 +11,7 @@ let numberGuess = 4;
 
 guessButton.addEventListener('click', function(event) { 
   event.preventDefault();
-  numberGuess -= 1;  
+  numberGuess -= 1;
   let guessNumber = parseInt(numberInput.value);
   
   if(guessNumber < 3) {
