@@ -11,27 +11,23 @@ let numberOfGuesses = 4;
 
 guessButton.addEventListener('click', function(event) { 
   event.preventDefault();
-  numberOfGuesses -= 1;
+  decrementGuesses();
   let userGuess = parseInt(numberInput.value);
   
   if(userGuess < 3) {
-    result.textContent = 'Oops, that\'s too low, guess again';
+    resultMessage('Oops, that\'s too low, guess again');
   }
   
   if(userGuess > 3) {
-    result.textContent = 'Yikes, that\'s too high, guess again';
+    resultMessage('Yikes, that\'s too high, guess again');
   }
 
   if(userGuess === 3) {
-    result.textContent = 'CONGRATULATIONS!';
-    hiFive.classList.remove('hidden');
-    disableButton();
+    winDisplay();
   }
 
   if(numberOfGuesses === 0) {
-    result.textContent = '';
-    youLose.classList.remove('hidden');
-    disableButton();  
+    loseDisplay();  
   }
 });
 
@@ -39,3 +35,22 @@ function disableButton() {
   guessButton.disabled = true;
 }
 
+function resultMessage(string) {
+  result.textContent = string;
+}
+
+function winDisplay() {
+  result.textContent = 'CONGRATULATIONS!';
+  hiFive.classList.remove('hidden');
+  disableButton();
+}
+
+function loseDisplay() {
+  result.textContent = '';
+  youLose.classList.remove('hidden');
+  disableButton();
+}
+
+function decrementGuesses() {
+  numberOfGuesses -= 1
+}
