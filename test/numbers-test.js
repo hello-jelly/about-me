@@ -1,58 +1,48 @@
-import numbers from '../src/numbers.js';
+import compareNumbers from '../src/compare-numbers.js';
 
 const test = QUnit.test;
 
-test('banana is yes', function(assert) {
+test('greater than', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-  const text = 'banana';
-  const expected = true;
+  const guess = 5;
+  const correctNumber = 3;
+  const expected = 1;
 
     //Act 
     // Call the function you're testing and set the result to a const
-  const result = isYes(text);
+  const result = compareNumbers(guess, correctNumber);
 
     //Assert
   assert.equal(result, expected);
 });
 
-test('BANANA is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'BANANA';
-  const expected = true;
+test('less than', function(assert) {
+  //Arrange
+  // Set up your parameters and expectations
+  const guess = 2;
+  const correctNumber = 3;
+  const expected = -1;
 
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
+  //Act 
+  // Call the function you're testing and set the result to a const
+  const result = compareNumbers(guess, correctNumber);
 
-    //Assert
+  //Assert
   assert.equal(result, expected);
 });
 
-test('nana is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'nana';
-  const expected = true;
+test('equals', function(assert) {
+  //Arrange
+  // Set up your parameters and expectations
+  const guess = 3;
+  const correctNumber = 3;
+  const expected = 0;
 
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
+  //Act 
+  // Call the function you're testing and set the result to a const
+  const result = compareNumbers(guess, correctNumber);
 
-    //Assert
+  //Assert
   assert.equal(result, expected);
 });
-
-// test('apple is no', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  // const text = 'apple';
-  // const expected = false;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  // const result = isYes(text);
-
-    //Assert
-//   assert.equal(result, expected);
