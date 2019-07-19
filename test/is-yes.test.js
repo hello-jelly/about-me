@@ -2,10 +2,10 @@ import isYes from '../src/is-yes.js';
 
 const test = QUnit.test;
 
-test('banana is yes', function(assert) {
+test('yes', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-  const text = 'banana';
+  const text = 'yes';
   const expected = true;
 
     //Act 
@@ -16,44 +16,18 @@ test('banana is yes', function(assert) {
   assert.equal(result, expected);
 });
 
-test('BANANA is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'BANANA';
-  const expected = true;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
-  assert.equal(result, expected);
-});
-
-test('nana is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'nana';
-  const expected = true;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
-  assert.equal(result, expected);
-});
-
-test('apple is no', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'apple';
+test('no', function(assert) {
+  //Arrange
+  // Set up your parameters and expectations
+  const text = 'no';
   const expected = false;
 
-    //Act 
-    // Call the function you're testing and set the result to a const
+  //Act 
+  // Call the function you're testing and set the result to a const
   const result = isYes(text);
 
-    //Assert
+  //Assert
   assert.equal(result, expected);
 });
+
+
