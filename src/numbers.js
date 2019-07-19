@@ -52,5 +52,5 @@ function loseDisplay() {
 }
 
 function decrementGuesses() {
-  numberOfGuesses -= 1
+  numberOfGuesses -= 1;
 }
