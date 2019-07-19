@@ -1,34 +1,58 @@
-// import numbers from './number-guess';
+import compareNumbers from './compare-numbers.js';
 
 // What do I need to get from DOM?
 
 const guessButton = document.getElementById('button');
 const result = document.getElementById('result');
 const numberInput = document.getElementById('number-input');
-const grandPrize = document.getElementById('hi-five'); 
-const gameLost = document.getElementById('you-lose');
-let numberGuess = 4;
+const hiFive = document.getElementById('hi-five'); 
+const youLose = document.getElementById('you-lose');
+let numberOfGuesses = 4;
 
 guessButton.addEventListener('click', function(event) { 
   event.preventDefault();
-  numberGuess -= 1;
-  let guessNumber = parseInt(numberInput.value);
+  decrementGuesses();
+  numberOfGuesses -= 1;
+  let userGuess = parseInt(numberInput.value);
+  let result = compareNumbers(userGuess, 3);
   
-  if(guessNumber < 3) {
-    result.textContent = 'Oops, that\'s too low, guess again';
+  if(result === -1) {
+    resultMessage('Oops, that\'s too low, guess again');
   }
   
-  if(guessNumber > 3) {
-    result.textContent = 'Yikes, that\'s too high, guess again';
+  if(result === 1) {
+    resultMessage('Yikes, that\'s too high, guess again');
   }
 
-  if(guessNumber === 3) {
-    result.textContent = 'CONGRATULATIONS!';
-    grandPrize.classList.remove('hidden');
+  if(result === 0) {
+    winDisplay();
   }
 
-  if(numberGuess === 0) {
-    result.textContent = '';
-    gameLost.classList.remove('hidden');
+  if(numberOfGuesses === 0) {
+    loseDisplay();
   }
 });
+
+function disableButton() {
+  guessButton.disabled = true;
+}
+
+function resultMessage(string) {
+  result.textContent = string;
+}
+
+function winDisplay() {
+  result.textContent = 'CONGRATULATIONS!';
+  hiFive.classList.remove('hidden');
+  disableButton();
+}
+
+function loseDisplay() {
+  result.textContent = '';
+  youLose.classList.remove('hidden');
+  disableButton();
+}
+
+function decrementGuesses() {
+  numberOfGuesses -= 1;
+}

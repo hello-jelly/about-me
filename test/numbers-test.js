@@ -1,58 +1,28 @@
-import numbers from '../src/numbers.js';
+import compareNumbers from '../src/compare-numbers.js';
 
 const test = QUnit.test;
 
-test('banana is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'banana';
+test('yes', function(assert) {
+  const text = 'yes';
   const expected = true;
 
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
   assert.equal(result, expected);
 });
 
-test('BANANA is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'BANANA';
-  const expected = true;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
-  assert.equal(result, expected);
+test('no', function(assert) {
+  const text = 'no';
+  const expected = false;
 });
 
-test('nana is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'nana';
-  const expected = true;
+const result = isYes(text);
+assert.equal(result, expected);
+)
 
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
+test('no', function(assert) {
+  const text = 'no';
+  const expected = false;
+})
 
-    //Assert
-  assert.equal(result, expected);
-});
-
-// test('apple is no', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  // const text = 'apple';
-  // const expected = false;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  // const result = isYes(text);
-
-    //Assert
-//   assert.equal(result, expected);
+const result = isYes(text);
+assert.equal(result, expected);
+});	});
