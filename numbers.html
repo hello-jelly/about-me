@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Number Guessing App</title>
     <link rel="stylesheet" href="src/numbers.css">
+    <link rel="stylesheet" href="src/main.css">
 </head>
 
 <body>
@@ -16,35 +17,29 @@
             <a href="game.html">Kai-Bai-Bo!</a>
         </nav>
         <h1><img class="logo" src="assets/logo.png" alt="game logo"></h1>
-        <img class="art" src="assets/art.png" alt="question mark art">
     </header>
 
     <main>
-        <section id="rules">
+        <section id="game-setup">
+            <div id="rules">
             <h2>Rules of the Game</h2>
             <p>
                 Guess a number between 1-20. <br>
                 You've got 4 tries to guess the correct number. <br>
                 Guess correctly and win the <strong>GRAND PRIZE!</strong>
             </p>
-        </section>
 
-        <section>
             <h2>Enter your best guess below!</h2>
-            <input id="number-input" type="number" min="1" max="20"/>
-        </section>
-        
-        <section>
+            <p><input id="number-input" type="number" min="1" max="20"/></p>
             <button id="button"><strong>SUBMIT GUESS</strong></button>
-            <p>
-                <span id="result"></span></p>
-            <div>
-                <img id="hi-five" class="hidden" src="assets/hi-five.jpg" alt="A High Five">
-                <img id="you-lose" class="hidden" src="assets/you-lose.jpg" alt="Sorry You Lose">
+            <p><span id="result"></span></p>
+
+            <img id="hi-five" class="hidden" src="assets/hi-five.jpg" alt="A High Five">
+            <img id="you-lose" class="hidden" src="assets/you-lose.jpg" alt="Sorry You Lose">
             </div>
+            <img class="question-marks" src="assets/art.png" alt="question mark art">
         </section>
     </main>
     <script type="module" src="src/numbers.js"></script>
-    <script src="./src/numbers.js"></script>
 </body>
 </html>
