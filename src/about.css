@@ -3,24 +3,6 @@ html {
     font-family: sans-serif;
 }
 
-header {
-    text-align: center;
-}
-
-nav a {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    justify-content: space-between;
-    padding: 4rem;
-    text-align: center;
-}
-
-main {
-    align-content: center;
-    font-size: 1.25rem;
-    margin: auto;
-}
-
 h1 {
     font-family: "Pacifico";
     font-size: 8rem;
@@ -32,19 +14,24 @@ h1 {
 }
 
 .border {
-    border: 1px solid white;
-    border-radius: 30px;
     background-color: white;
-    height: 410px;
-    margin: auto;
+    border: 20px solid rgb(146, 233, 204);
+    border-radius: 30px;
+    box-shadow: 30px 30px 40px darkgoldenrod;
+    height: 555px;
     text-align: center;
-    width: 1500px;
+    width: 80%;
+}
+
+.border p {
+    line-height: 1.5;
+    padding: 2rem;
 }
 
 .profile {
     border-radius: 50%;
     float: left;
-    height: 350px;
+    height: 500px;
     margin: 6px;
     padding: 1.25rem;
 }
@@ -53,15 +40,31 @@ h2 {
     font-size: 1.5rem;
 }
 
+.copy {
+    padding: 2rem;
+}
+
+#para-two {
+    margin-top: 0;
+}
+
 h4 {
     font-family: "Pacifico";
     color: brown;
     font-size: 2.5rem;
 }
 
+.lists-quiz {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+
+}
+
 button {
-    background-color: rgb(146, 233, 204);
-    border-color: rgb(146, 233, 204);
+    background-color: rgb(146 233 204);
+    border-color: rgb(146 233 204);
     border-radius: 30px;
     font-size: 1.75rem;
     height: 100px;
@@ -69,10 +72,8 @@ button {
     width: 400px;
 }
 
-.lists {
-    font-size: 1.5rem;
-    margin: auto;
-    width: 1500px;
+ul ol h3 {
+margin: auto;
 }
 
 .bonus-pic {

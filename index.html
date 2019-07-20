@@ -23,21 +23,27 @@
     </header>
     
     <main>
-        <section class="border">
-            <div id="intro">
+        <div id="intro" class="border">
+            <section>
                 <img class="profile" src="assets/bisbee.jpg" alt="photo of Bisbee"> <br>
                 <h2>Hello Everyone...</h2>
-                <p>
-                    I'm Bisbee, a 7 year old Exotic Shorthair cat. I was passed around 3 homes before <br>
-                    getting rescued by my current owners in 2013. I live in SE Portland with my family <br>
-                    of 9. My favorite people are my Mom and Dad, and I enjoy the birds as well: Ringo, <br>
-                    Rosie and Siggy. I tolerate the dogs: Suede, Nimbus and Desmond, but I absolutely <br>
-                    detest the newest member, Jerome...the <em>other cat</em>. My hobbies include napping on <br> 
-                    the wine rack, sitting in the fireplace, peering at you from behind a wall, knocking all <br>
-                    objects off all surfaces, and cramming myself into tiny boxes.
+                <p class="copy">
+                    I'm Bisbee, a 7 year old Exotic Shorthair cat. I was passed around 3 homes before 
+                    getting rescued by my current owners in 2013. I live in SE Portland with my family
+                    of 9. My favorite people are my Mom and Dad, and I enjoy the birds as well: Ringo, 
+                    Rosie and Siggy. I tolerate the dogs: Suede, Nimbus and Desmond, but I absolutely 
+                    detest the newest member, Jerome...the <em>other cat</em>.
                 </p>
-            </div>
-        </section>
+            </section>
+
+            <section>
+                <p class="copy" id="para-two">
+                    My hobbies include napping on 
+                    the wine rack, sitting in the fireplace, peering at you from behind a wall, knocking all 
+                    objects off all surfaces, and cramming myself into tiny boxes.                    
+                </p>
+            </section>
+        </div>  
         
         <section class="lists">
             <img class="bonus-pic" src="assets/bisbee-box.png" alt="bisbee in a box">
@@ -51,20 +57,20 @@
             </ol>
         </section>
         
-        <section class="lists">
-            <h3>Bisbee hates...</h3>
-            <ul>
-                <li>when Jerome chases her</li>
-                <li>when Jerome steals her food</li>
-                <li>when Jerome intrudes on her playtime</li>
-                <li>...Jerome</li>
-            </ul>
-        </section>
-        
-        <section class="lists">
+        <section class="list-quiz">
+            <div>
+                <h3>Bisbee hates...</h3>
+                <ul>
+                    <li>when Jerome chases her</li>
+                    <li>when Jerome steals her food</li>
+                    <li>when Jerome intrudes on her playtime</li>
+                    <li>...Jerome</li>
+                </ul>
+            </div>
             <h4>Now test your knowledge!</h4>
             <button id="quiz-button"><strong>POP QUIZ</strong></button>
             <p class="finish" id="quiz-result"><span id="response"></span></p>
+            </div>
         </section>
     </main>
     <script type="module" src="src/app.js"></script>
