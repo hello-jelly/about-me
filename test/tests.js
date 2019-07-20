@@ -1,3 +1,3 @@
-// import isYes from '../src/is-yes.test.js';
-// import numbers from '../src/numbers-test.js';
-// import cpuHand from './cpu-hand.test.js';
+import './is-yes.test.js';
+import './numbers-test.js';
+import './cpu-hand.test.js';

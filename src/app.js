@@ -11,6 +11,7 @@ const result = document.getElementById('quiz-result');
 quizButton.onclick = function() {
   alert('Were you paying attention?');
   const confirmed = confirm('Are you sure about that?');
+  
   if(confirmed === false) {
     return;
   }
