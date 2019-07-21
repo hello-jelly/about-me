@@ -1,9 +1,9 @@
 export function getThrowFromNumber(getThrow) {
-  if(getThrow < 0.333333) {
+  if(getThrow === 0) {
     return 'scissors';
-  } else if(getThrow >= 0.666666) {
+  } else if(getThrow === 1) {
     return 'rock';
-  } else {
+  } else if(getThrow === 2) {
     return 'paper';
   }
 }
