@@ -1,4 +1,4 @@
-//imported "hand" which is the result of cpu's hand randomNumber outcome
+//imports hand = cpu's random play
 
 import { hand } from './get-throw.js';
 
@@ -14,13 +14,15 @@ const cpuPaper = document.getElementById('cpu-paper');
 const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 const response = document.getElementById('response');
+const balanceLeft = document.querySelector('.balance');
 
 //States for tracking
 
 let wins = 0;
 let losses = 0;
+let balance = 100;
 
-//Variable plays used to determine wins, losses and ties by comparing the playerHand to cpuHand
+//Dictionary used to determine wins, losses and ties by comparing the playerHand to cpuHand
 
 const plays = {
   bai: {
@@ -40,19 +42,23 @@ const plays = {
   }
 };
 
-//Function to compare  
+//Switch case takes result of the play and returns the response text and updates tally and balance  
 
 function handleResult(result) {
   switch(result) {
     case 'win':
       response.innerText = 'You Won!';
       wins += 1;
+      balance += betAmount();
       updateTally();
+      updateBalance();
       break;
     case 'loss':
       response.innerText = 'You Lost';
       losses += 1;
+      balance -= betAmount();
       updateTally();
+      updateBalance();
       break;
     case 'tie':
       response.innerText = 'Samesies';
@@ -60,7 +66,7 @@ function handleResult(result) {
   }
 }
 
-//Switch function determined by case - Removes invisibility on corresponding img based on Player's Hand 
+//Switch case takes value of player's hand and reveals corresponding img 
 
 function showPlayerHand(hand) {
   switch(hand) {
@@ -76,7 +82,7 @@ function showPlayerHand(hand) {
   }
 }
 
-//Switch function determined by case - Removes invisibility on corresponding img based on CPU's Hand 
+//Switch case takes value of cpu's hand and reveals corresponding img 
 
 function showCpuHand(hand) {
   switch(hand) {
@@ -103,12 +109,22 @@ function resetHands() {
   playerPaper.classList.add('invisible');
 }
 
-//Function to increase number of wins or losses
+//Function to increase number of wins or losses based on game outcome
 
 function updateTally() {
   winCount.innerText = wins;
   lossCount.innerText = losses;
 }
+
+function updateBalance() {
+  balanceLeft.innerText = balance;
+}
+
+function betAmount() {
+  return parseInt(document.querySelector('input[name=bet]').value);
+}
+
+//Player's interaction that starts the game 
 
 playButton.addEventListener('click', () => {
   resetHands();
