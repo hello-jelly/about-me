@@ -54,13 +54,17 @@ h2 {
 
 .list-quiz {
     font-size: 1.5rem;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     margin: 2rem;
     padding: 4rem 15rem;
 }
 
+#bisbee-box {
+    text-align: center;
+}
+
 .bonus-pic {
-    float: right;
     height: 1200px;
 }
 

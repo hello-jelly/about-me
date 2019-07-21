@@ -1,6 +1,6 @@
 //imported "hand" which is the result of cpu's hand randomNumber outcome
 
-import { hand } from './cpu-hand.js';
+import { hand } from './get-throw.js';
 
 //Variables for DOM elements to be used
 

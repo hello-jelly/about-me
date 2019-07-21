@@ -1,4 +1,4 @@
-import { getHandFromNumber, hand } from '../src/cpu-hand.js';
+import { getHandFromNumber, hand } from '../src/get-throw.js';
 
 const test = QUnit.test;
 
