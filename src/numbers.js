@@ -1,4 +1,4 @@
-import compareNumbers from './compare-numbers.js';
+import { compareNumbers, getRandomInt } from './compare-numbers.js';
 
 // What do I need to get from DOM?
 
@@ -14,7 +14,8 @@ guessButton.addEventListener('click', function(event) {
   event.preventDefault();
   decrementGuesses();
   let userGuess = parseInt(numberInput.value);
-  let result = compareNumbers(userGuess, 3);
+  let randomNumber = getRandomInt(20);
+  let result = compareNumbers(userGuess, randomNumber);
   
   if(result === -1) {
     resultMessage('Oops, that\'s too low, guess again');

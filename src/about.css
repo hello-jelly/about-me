@@ -70,7 +70,7 @@ button {
     border-radius: 30px;
     font-size: 1.75rem;
     height: 100px;
-    margin: 2rem;
+    margin: 4rem;
     width: 350px;
 }
 
@@ -79,5 +79,11 @@ li {
 }
 
 .finish {
-    font-size: 2rem; 
+    font-size: 2.25rem;
+    font-weight: 600; 
+}
+
+.finish.win {
+    color: magenta;
+    font-style: oblique;
 }

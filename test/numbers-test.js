@@ -1,4 +1,4 @@
-import compareNumbers from '../src/compare-numbers.js';
+import { compareNumbers } from '../src/compare-numbers.js';
 
 const test = QUnit.test;
 
@@ -24,4 +24,17 @@ test('equals', function(assert) {
   const expected = 0;
   const result = compareNumbers(guess, correctNumber);
   assert.equal(result, expected);
+});
+
+test('should throw on invalid input', function(assert) {
+  assert.throws(
+    function() {
+      let badArgument = 'A';
+      compareNumbers(badArgument);
+    },
+    function(error) {
+      return error === 'Parameter is not a number';
+    },
+    'should match the error message'
+  );
 });
