@@ -2,14 +2,6 @@ html {
   background-color: rgb(160 219 231);
 }
 
-nav a {
-  font-family: sans-serif;
-  font-size: 2rem;
-  justify-content: space-between;
-  padding: 2rem;
-  text-align: center;
-}
-
 main {
   display: center;
   font-family: 'Roboto Condensed', sans-serif;

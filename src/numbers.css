@@ -3,38 +3,34 @@ html {
     font-family: sans-serif;
 }
 
-nav a {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    justify-content: space-between;
-    padding: 4rem;
-    text-align: center;
-}  
-
 .logo {
     float: center;
-    width: 1200px;
+    margin-top: 2rem;
+    width: 50rem;
 }
 
 main {
     display: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 #game-setup {
-    align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    font-size: 1.5rem;
+    height: 55rem;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 1.25rem 22rem;
 }
 
 .question-marks {
     float: right;
-    width: 900px;
+    margin-left: 0;
+    height: 50rem;
 }
 
 #rules {
     font-size: 1.5rem;
-    float: left;
 }
 
 button {

@@ -1,10 +1,13 @@
 html {
-    font-size: 1.25rem;
-    margin: 4rem;
+    font-size: 1.5rem;
 }
 
 header {
     text-align: center;
+}
+
+nav {
+    margin-top: 4rem;
 }
 
 nav a {
@@ -16,9 +19,9 @@ nav a {
 }
 
 main {
-    align-content: center;
     font-size: 1.25rem;
-    margin: auto;
+    margin: 0 auto;
+    max-width: 80%
 }
 
 input {

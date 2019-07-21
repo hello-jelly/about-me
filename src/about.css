@@ -4,36 +4,36 @@ html {
 }
 
 h1 {
+    color: maroon;
     font-family: "Pacifico";
     font-size: 8rem;
-    color: maroon;
-}
-
-#intro {
-    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .border {
     background-color: white;
-    border: 20px solid rgb(146, 233, 204);
     border-radius: 30px;
+    border: 20px solid rgb(146, 233, 204);
     box-shadow: 30px 30px 40px darkgoldenrod;
-    height: 555px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem;
     text-align: center;
-    width: 80%;
+    width: 75%;
 }
 
 .border p {
     line-height: 1.5;
-    padding: 2rem;
+    margin: 0;
 }
 
 .profile {
     border-radius: 50%;
     float: left;
-    height: 500px;
-    margin: 6px;
-    padding: 1.25rem;
+    height: 600px;
+    padding-bottom: 1.75rem;
+    margin-right: 2rem;
 }
 
 h2 {
@@ -41,25 +41,27 @@ h2 {
 }
 
 .copy {
-    padding: 2rem;
+    padding: 1.25rem;
 }
 
-#para-two {
-    margin-top: 0;
-}
-
-h4 {
-    font-family: "Pacifico";
+.styled-header {
     color: brown;
-    font-size: 2.5rem;
+    font-family: "Pacifico";
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: auto;
 }
 
-.lists-quiz {
-    align-items: center;
-    display: flex;
+.list-quiz {
     font-size: 1.5rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 4rem 15rem;
+}
 
+.bonus-pic {
+    float: right;
+    height: 1200px;
 }
 
 button {
@@ -68,17 +70,12 @@ button {
     border-radius: 30px;
     font-size: 1.75rem;
     height: 100px;
-    margin: 3rem;
-    width: 400px;
+    margin: 2rem;
+    width: 350px;
 }
 
-ul ol h3 {
-margin: auto;
-}
-
-.bonus-pic {
-    float: right;
-    width: 1000px;
+li {
+    line-height: 1.5;
 }
 
 .finish {
