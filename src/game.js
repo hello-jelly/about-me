@@ -25,20 +25,20 @@ let balance = 100;
 //Dictionary used to determine wins, losses and ties by comparing the playerHand to cpuHand
 
 const plays = {
-  bai: {
-    bai: 'tie',
-    bo: 'loss',
-    kai: 'win'
+  rock: {
+    rock: 'tie',
+    paper: 'loss',
+    scissors: 'win'
   },
-  bo: {
-    bai: 'win',
-    bo: 'tie',
+  paper: {
+    rock: 'win',
+    paper: 'tie',
     kai: 'loss'
   },
-  kai: {
-    bai: 'loss',
-    bo: 'win',
-    kai: 'tie'
+  scissors: {
+    rock: 'loss',
+    paper: 'win',
+    scissors: 'tie'
   }
 };
 
@@ -70,13 +70,13 @@ function handleResult(result) {
 
 function showPlayerHand(hand) {
   switch(hand) {
-    case 'kai':
+    case 'scissors':
       playerScissor.classList.remove('invisible');
       break;
-    case 'bai':
+    case 'rock':
       playerRock.classList.remove('invisible');
       break;
-    case 'bo':
+    case 'paper':
       playerPaper.classList.remove('invisible');
       break;
   }
@@ -86,13 +86,13 @@ function showPlayerHand(hand) {
 
 function showCpuHand(hand) {
   switch(hand) {
-    case 'kai':
+    case 'scissors':
       cpuScissor.classList.remove('invisible');
       break;
-    case 'bai':
+    case 'rock':
       cpuRock.classList.remove('invisible');
       break;
-    case 'bo':
+    case 'paper':
       cpuPaper.classList.remove('invisible');
       break;
   }
