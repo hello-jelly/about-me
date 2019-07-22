@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import isYes from './is-yes.js';
+import isYes from './tests.js';
 
 // Reference needed DOM elements
 const quizButton = document.getElementById('quiz-button');
