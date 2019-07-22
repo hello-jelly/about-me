@@ -1,14 +1,38 @@
+import isYes from '../src/is-yes.js';
+
 const test = QUnit.test;
-import isYes from './is-yes.js';
 
-    //Arrange
-    // Set up your parameters and expectations
+test('yes should be true', function(assert) {
+  const text = 'y';  
+  const expected = true;
+  const result = isYes(text);
+  assert.equal (result, expected);
+});
 
-    //Act 
-    // Call the function you're testing and set the result to a const
+test('yes should be true', function(assert) {
+  const text = 'yes';  
+  const expected = true;
+  const result = isYes(text);
+  assert.equal (result, expected);
+});
 
-const helloJelly = true;
-const isHelloJelly = 'Is my Github name Hello Jelly?';
-if(isYes(isHelloJelly) === helloJelly) {
-  console.log('You were right');
-}
+test('yeah should be true', function(assert) {
+  const text = 'yeah';  
+  const expected = true;
+  const result = isYes(text);
+  assert.equal (result, expected);
+});
+
+test('yup should be true', function(assert) {
+  const text = 'yup';  
+  const expected = true;
+  const result = isYes(text);
+  assert.equal (result, expected);
+});
+
+test('yup should be true', function(assert) {
+  const text = 'ya';  
+  const expected = true;
+  const result = isYes(text);
+  assert.equal (result, expected);
+});

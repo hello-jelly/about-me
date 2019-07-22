@@ -1,62 +1,116 @@
 html {
     background-image: url('../assets/background.jpg');
     font-family: sans-serif;
-    font-size: 1.25rem;
-}
-
-main {
-    margin: 5rem;
+    font-size: 1.5rem;
 }
 
 header {
-    margin: 3rem;
     text-align: center;
+}
+
+nav {
+    margin-top: 4rem;
+}
+
+nav a {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: 4rem;
+    text-align: center;
+}
+
+main {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 80%
 }
 
 h1 {
-    font-family: "Pacifico";
-    font-size: 6rem;
     color: maroon;
-}
-
-h4 {
     font-family: "Pacifico";
-    color: brown;
-    font-size: 2rem;
-}
-
-button {
-    height: 100px;
-    width: 400px;
-    margin: 20px;
-    background-color: rgb(146, 233, 204);
-    border-color: rgb(146, 233, 204);
-    font-size: 1.75rem;
-    border-radius: 30px;
-}
-
-.profile {
-    float: left;
-    margin: 10px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-.bonus-pic {
-    float: right;
-    width: 650px;
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .border {
-    border-color: white;
-    border-radius: 30px;
-    border-style: solid;
     background-color: white;
-    height: 325px;
+    border-radius: 30px;
+    border: 20px solid rgb(146, 233, 204);
+    box-shadow: 30px 30px 40px darkgoldenrod;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem;
     text-align: center;
-    padding: 10px;
+    width: 75%;
+}
+
+.border p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.profile {
+    border-radius: 50%;
+    float: left;
+    height: 600px;
+    padding-bottom: 1.75rem;
+    margin-right: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.copy {
+    padding: 1.25rem;
+}
+
+.styled-header {
+    color: brown;
+    font-family: "Pacifico";
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+.list-quiz {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 4rem 15rem;
+}
+
+#bisbee-box {
+    text-align: center;
+}
+
+.bonus-pic {
+    height: 1200px;
+}
+
+button {
+    background-color: rgb(146 233 204);
+    border-color: rgb(146 233 204);
+    border-radius: 30px;
+    font-size: 1.75rem;
+    height: 100px;
+    margin: 4rem;
+    width: 350px;
+}
+
+li {
+    line-height: 1.5;
 }
 
 .finish {
-    font-size: 2rem; 
+    font-size: 2.25rem;
+    font-weight: 600; 
+}
+
+.finish.win {
+    color: magenta;
+    font-style: oblique;
 }
