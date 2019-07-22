@@ -52,7 +52,7 @@ quizButton.onclick = function() {
     response += correctAnswers + '/3 (' + (correctAnswers / 3 * 100).toFixed(0) + '%)...the Biz is pleased!';
     result.classList.add('win');
   } else {
-    response += correctAnswers + '/3(' + (correctAnswers / 3 * 100).toFixed(0) + '%)...the Biz is insulted!';
+    response += correctAnswers + '/3 (' + (correctAnswers / 3 * 100).toFixed(0) + '%)...the Biz is insulted!';
     result.classList.add('finish');
     result.classList.remove('win');
   }  
