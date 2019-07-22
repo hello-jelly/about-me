@@ -1,0 +1,74 @@
+html {
+    background-color: rgb(242, 204, 86);
+    font-family: sans-serif;
+}
+
+.logo {
+    float: center;
+    margin-top: 2rem;
+    width: 50rem;
+}
+
+main {
+    display: center;
+    margin: 0 auto;
+}
+
+#game-setup {
+    display: flex;
+    font-size: 1.5rem;
+    height: 55rem;
+    justify-content: center;
+    padding: 1.25rem 22rem;
+}
+
+#question-image {
+    text-align: center;
+}
+
+.question-marks {
+    float: right;
+    margin-left: 4rem;
+    height: 50rem;
+}
+
+#rules {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: rgb(240, 56, 202);
+    border-color: rgb(240, 56, 202);
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 300px;
+}
+
+section {
+    text-align: center;
+}
+
+#hi-five {
+    border-radius: 50%;
+    height: 600px;
+}
+
+#you-lose {
+    height: 600px;
+}
+
+#result {
+    font-size: 1.5rem;
+    font-style: oblique;
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}

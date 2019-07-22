@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me Exercise</title>
+    <link rel="stylesheet" href="src/about.css">
     <link rel="stylesheet" href="src/main.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
@@ -13,50 +14,66 @@
 </head>
 <body>
     <header>
+        <nav>
+            <a href="./">About Me</a>
+            <a href="numbers.html">Guess Game</a>
+            <a href="game.html">Kai-Bai-Bo!</a>
+        </nav>
         <h1>Meet Bisbee!</h1>
     </header>
+    
     <main>
-        <section class="border">
+        <div id="intro" class="border">
             <img class="profile" src="assets/bisbee.jpg" alt="photo of Bisbee"> <br>
-            <h2>Hello Everyone...</h2>
-            <p>
-                I'm Bisbee, a 7 year old Exotic Shorthair cat. I was passed around 3 homes before <br>
-                getting rescued by my current owners in 2013. I live in SE Portland with my family <br>
-                of 9. My favorite people are my Mom and Dad, and I enjoy the birds as well: Ringo, <br>
-                Rosie and Siggy. I tolerate the dogs: Suede, Nimbus and Desmond, but I absolutely <br>
-                detest the newest member, Jerome...the <em>other cat</em>. My hobbies include napping on <br> 
-                the wine rack, sitting in the fireplace, peering at you from behind a wall, knocking all <br>
-                objects off all surfaces, and cramming myself into tiny boxes.
-            </p>
-        </section>
+            <section>
+                <h2 class="styled-header">A little about me...</h2>
+                <p class="copy">
+                    I'm Bisbee, a 7 year old Exotic Shorthair cat. I'm just a little thing, weighing in at 6 pounds.
+                    I was passed around 3 homes before getting rescued by my current owners in 2013. I live in SE Portland with my family
+                    of 9. My favorite people are my Mom and Dad, and I enjoy the birds as well: Ringo, 
+                    Rosie and Siggy. I tolerate the dogs: Suede, Nimbus and Desmond, but I absolutely 
+                    detest the newest member, Jerome...the <em>other cat</em>.
+                </p>
+            </section>
+
+            <section>
+                <p class="copy">
+                    My hobbies include napping on the wine rack, sitting in the fireplace, peering at you 
+                    from behind a wall, knocking any and all objects off surfaces, and cramming myself into 
+                    the littlest boxes. I also love to leave little tufts of hair all around the house. It's
+                    great exercise for my dad, having to pick them up behind me.                   
+                </p>
+            </section>
+        </div>  
         
-        <section>
-            <img class="bonus-pic" src="assets/bisbee-box.png" alt="bisbee in a box">
-            <h3>Bisbee loves, in order...</h3>
-            <ol>
-                <li>getting all the attention</li>
-                <li>when Mom puts bonito flakes on her kibble</li>
-                <li>feather teasers and yarn</li>
-                <li>long hours staring out the window</li>
-                <li>a sparkling clean litter box</li>
-            </ol>
-        </section>
+        <div class="list-quiz">
+            <section id="lists">
+                <h2>Bisbee loves, in order...</h2>
+                <ol>
+                    <li>Getting all the attention</li>
+                    <li>When Mom puts bonito flakes on her kibble</li>
+                    <li>Feather teasers and yarn</li>
+                    <li>Long hours staring out the window</li>
+                    <li>A squeaky clean litter box</li>
+                </ol>
         
-        <section>
-            <h3>Bisbee hates...</h3>
-            <ul>
-                <li>when Jerome chases her</li>
-                <li>when Jerome steals her food</li>
-                <li>when Jerome intrudes on her playtime</li>
-                <li>...Jerome</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h4>Now test your knowledge!</h4>
-            <button id="quiz-button"><strong>POP QUIZ</strong></button>
-            <p class="finish" id="quiz-result"><span id="response"></span></p>
-        </section>
+                <div id="hates">
+                    <h2>Bisbee hates...</h2>
+                    <ul>
+                        <li>When Jerome chases her</li>
+                        <li>When Jerome steals her food</li>
+                        <li>When Jerome intrudes on her playtime</li>
+                        <li>...Jerome</li>
+                    </ul>
+                </div>
+                <h2 class="styled-header">Now test your knowledge!</h2>
+                <button id="quiz-button"><strong>POP QUIZ</strong></button>
+                <p class="finish" id="quiz-result"><span id="response"></span></p>
+            </section>
+            <div id="bisbee-box">
+                <img class="bonus-pic" src="assets/bisbee-box.png" alt="bisbee in a box">
+            </div>
+        </div>
     </main>
     <script type="module" src="src/app.js"></script>
 </body>
