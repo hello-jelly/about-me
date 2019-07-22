@@ -11,6 +11,7 @@ const result = document.getElementById('quiz-result');
 quizButton.onclick = function() {
   alert('Were you paying attention?');
   const confirmed = confirm('Are you sure about that?');
+  
   if(confirmed === false) {
     return;
   }
@@ -46,11 +47,14 @@ quizButton.onclick = function() {
   }
   
   alert('Are you ready for your score?');
-  let response = 'You scored ';
+  let response = 'Hey ' + firstLastName + ', You scored ';
   if(correctAnswers === 3) {
-    response += correctAnswers + '/3, the Biz is pleased!';
+    response += correctAnswers + '/3 (' + (correctAnswers / 3 * 100).toFixed(0) + '%)...the Biz is pleased!';
+    result.classList.add('win');
   } else {
-    response += correctAnswers + '/3, the Biz is insulted!';
+    response += correctAnswers + '/3(' + (correctAnswers / 3 * 100).toFixed(0) + '%)...the Biz is insulted!';
+    result.classList.add('finish');
+    result.classList.remove('win');
   }  
   result.textContent = response;
 };
