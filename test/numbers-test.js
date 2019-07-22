@@ -1,57 +1,40 @@
-import numbers from '../src/numbers.js';
+import { compareNumbers } from '../src/compare-numbers.js';
 
 const test = QUnit.test;
 
-test('banana is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'banana';
-  const expected = true;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
-  assert.equal(result, expected);
-
-test('BANANA is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'BANANA';
-  const expected = true;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
+test('greater than', function(assert) {
+  const guess = 5;
+  const correctNumber = 3;
+  const expected = 1;
+  const result = compareNumbers(guess, correctNumber);
   assert.equal(result, expected);
 });
 
-test('nana is yes', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  const text = 'nana';
-  const expected = true;
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-  const result = isYes(text);
-
-    //Assert
+test('less than', function(assert) {
+  const guess = 2;
+  const correctNumber = 3;
+  const expected = -1;
+  const result = compareNumbers(guess, correctNumber);
   assert.equal(result, expected);
 });
 
-// test('apple is no', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-  // const text = 'apple';
-  // const expected = false;
+test('equals', function(assert) {
+  const guess = 3;
+  const correctNumber = 3;
+  const expected = 0;
+  const result = compareNumbers(guess, correctNumber);
+  assert.equal(result, expected);
+});
 
-    //Act 
-    // Call the function you're testing and set the result to a const
-  // const result = isYes(text);
-
-    //Assert
-//   assert.equal(result, expected);
+test('should throw on invalid input', function(assert) {
+  assert.throws(
+    function() {
+      let badArgument = 'A';
+      compareNumbers(badArgument);
+    },
+    function(error) {
+      return error === 'Parameter is not a number';
+    },
+    'should match the error message'
+  );
+});
